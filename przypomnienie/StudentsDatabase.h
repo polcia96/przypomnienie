@@ -10,5 +10,6 @@ public:
 
 	//funkcja dodaje nowego studenta do mapy,je¿eli dodawanie sie powiodlo zwraca true,w przeciwnym razie false
 	bool insertStudent(Student& newStudent);
+	bool findStudent(int index);
 };
 

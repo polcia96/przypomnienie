@@ -3,5 +3,7 @@
 
 
 bool StudentsDatabase::insertStudent(Student& newStudent) {
-	return database.emplace(newStudent.getIndexNumber, newStudent);
+	std::pair<std::map<unsigned int,Student>::iterator, bool> returning;
+	returning=database.emplace(newStudent.getIndexNumber(), newStudent);
+	return returning.second;
 }
