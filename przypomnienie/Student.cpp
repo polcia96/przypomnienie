@@ -38,7 +38,7 @@ void Student::enterData() {
 
 	std::cout << "dane zostaly poprawnie wprowadzone" << std::endl;
 
-	
+
 }
 
 
